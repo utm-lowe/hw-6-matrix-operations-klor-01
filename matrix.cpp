@@ -92,7 +92,7 @@ Matrix operator*(const Matrix& m1, const Matrix& m2){
     for(int i= 0; i<m1.getRows(); i++){
         for(int j=0; j<m1.getCols(); j++){
             for(int k =0; k<m1.getCols(); k++){
-                result.at(i, j) += m1.at(i, j)*m2.at(k,j);
+                result.at(i, j) += m1.at(i, k)*m2.at(k,j);
             }
         }
     }
