@@ -110,6 +110,7 @@ Matrix operator*(double scalar, const Matrix& m){
     return result;
 }
 //scalar * matrix
+//for commit
 
 Matrix operator*(const Matrix& m, double scalar){
     return scalar *m;
