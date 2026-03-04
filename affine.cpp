@@ -207,8 +207,9 @@ Matrix transformMenu()
             case 'D':
             break;
             default:
-            cout << "Invalid choice. Please enter T, R, S, or D." << endl;
-            break;
+            cout << "Invalid choice. Please try again." << endl;
+        
+
         }
 
     }while(choice != 'D');
