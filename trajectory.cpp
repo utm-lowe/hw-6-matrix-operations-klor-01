@@ -88,9 +88,9 @@ int main() {
         // 3. If the current position exceeds the grid height, update the grid
         //    height to the y coordinate + 1.
         // YOUR CODE HERE
-        position = velocity + velocity*deltaTime;
+        position = position + velocity*deltaTime;
 
-        velocity = position + velocity*deltaTime;
+        velocity = velocity + gravity*deltaTime;
 
         int currentY = static_cast<int>(position.at(1, 0));
         if (currentY + 1 > gridHeight) {
